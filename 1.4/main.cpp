@@ -4,7 +4,8 @@
 int main()
 {
 	CGroundAnalyzer groundAnalyzer;
-	std::cout << groundAnalyzer.GetWallsNum() << std::endl;
+	std::ofstream output(OSTREAM_FILE_NAME);
+	output << groundAnalyzer.GetWallsNum() << std::endl;
 	return 0;
 }
 

@@ -18,6 +18,4 @@
 static const std::string FILE_NAME = "input.txt";
 static const std::string OSTREAM_FILE_NAME = "output.txt";
 
-
-
 // TODO: reference additional headers your program requires here

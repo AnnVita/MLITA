@@ -54,16 +54,6 @@ void CGroundAnalyzer::MarkInsideCells(size_t i, size_t j)
 
 size_t CGroundAnalyzer::GetWallsNum()
 {
-	/*for (size_t i = 0; i < m_rows; ++i)
-	{
-		for (size_t j = 0; j < m_colomns; ++j)
-		{
-			if (m_groundArray[i][j].value)
-			{
-				CheckNearPlaces(i, j);
-			}
-		}
-	}*/
 	for (size_t i = 1; i < m_groundArray.size(); ++i)
 	{
 		for (size_t j = 1; j < m_groundArray[i].size(); ++j)
@@ -81,51 +71,4 @@ void CGroundAnalyzer::CheckNearPlaces(size_t i, size_t j)
 		m_wallNum += int(!m_groundArray[i][j - 1].inside) + int(!m_groundArray[i + 1][j].inside)
 			+ int(!m_groundArray[i][j + 1].inside) + int(!m_groundArray[i - 1][j].inside);
 	}
-	/*
-	if (i == 0)
-	{
-		m_wallNum += 1;
-	}
-	if (i == m_rows - 1)
-	{
-		m_wallNum += 1;
-	}
-	if (i > 0)
-	{
-		if (!m_groundArray[i - 1][j])
-		{
-			m_wallNum += 1;
-		}
-	}
-	if (i < m_rows - 1)
-	{
-		if (!m_groundArray[i + 1][j])
-		{
-			m_wallNum += 1;
-		}
-	}
-	if (j == 0)
-	{
-		m_wallNum += 1;
-	}
-	if (j == m_colomns - 1)
-	{
-		m_wallNum += 1;
-	}
-	if (j > 0)
-	{
-		if (!m_groundArray[i][j - 1])
-		{
-			m_wallNum += 1;
-		}
-	}
-	if (j < m_colomns - 1)
-	{
-		if (!m_groundArray[i][j + 1])
-		{
-			m_wallNum += 1;
-		}
-	}
-	*/
-	
 }

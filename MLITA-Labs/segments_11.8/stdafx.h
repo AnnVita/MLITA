@@ -9,15 +9,18 @@
 
 #include <stdio.h>
 #include <tchar.h>
-
-#include <string>
-#include <vector>
-#include <iostream>
 #include <fstream>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
 
-static const std::string FILE_NAME = "input.txt";
-static const std::string OSTREAM_FILE_NAME = "output.txt";
+static std::string INPUT_NAME = "input.txt";
+static std::string OUTPUT_NAME = "output.txt";
+static const std::string YES = "Yes";
+static const std::string NO = "No";
 
+using Point = std::pair<int, int>;
 
 
 // TODO: reference additional headers your program requires here

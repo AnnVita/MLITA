@@ -14,10 +14,10 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
+#include <ostream>
+#include <iterator>
 
-static const std::string FILE_NAME = "input.txt";
-static const std::string OSTREAM_FILE_NAME = "output.txt";
-
-
+static std::string FILE_NAME = "input.txt";
 
 // TODO: reference additional headers your program requires here
